@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from flask import Flask, Response
 from picamera2 import Picamera2
 from libcamera import controls
