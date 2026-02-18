@@ -48,7 +48,7 @@ class Vision:
         for text, value in labels_list:
             # Align left labels to the left and the rest to the right
             if counter < left_labels:
-                cv2.putText(frame, f'{text}: {str(value)}', (0, (counter + 1) * 30), self.font, self.scale, self.colour, 2)
+                cv2.putText(frame, f'{text}: {str(value)}', (10, (counter + 1) * 30), self.font, self.scale, self.colour, 2)
             else:
                 label = f'{text}: {str(value)}'
                 (text_width, text_height), baseline = cv2.getTextSize(label, self.font, self.scale, 2)
